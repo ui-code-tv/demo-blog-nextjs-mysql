@@ -32,3 +32,39 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+
+// 1] Create an End point called posts hard code with following data :
+        { posts:[
+            {title:"This is all about end points",content:"This is all about api end points111"},
+            {title:"How to guide on SSR",content:"This is all about server side rendering" },
+            {title:"My first post",content:"This is my first post..I have nothing much to say" },
+            {title:"A post",content:"Yet another post" },
+            {title:"Last years post",content:"This post is from last year" }
+            ]
+        }
+// 2] Add SWR data fetch hook to get data on the client side
+
+// 3] Create a statically generated page using getStaticProps (Static Generation)
+
+// 4] Use SWR with getStaticProps
+
+
+// 1] Create an End point called posts hard code with following data :
+        { posts:[
+            {title:"This is all about end points",content:"This is all about api end points111"},
+            {title:"How to guide on SSR",content:"This is all about server side rendering" },
+            {title:"My first post",content:"This is my first post..I have nothing much to say" },
+            {title:"A post",content:"Yet another post" },
+            {title:"Last years post",content:"This post is from last year" }
+            ]
+        }
+// 2] Add SWR data fetch hook to get data on the client side
+
+// 3] Create a statically generated page using getStaticProps (Static Generation)
+
+// 4] Use SWR with getStaticProps
+
+// Add data base stuff
