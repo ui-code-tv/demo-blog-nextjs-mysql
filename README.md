@@ -1,4 +1,30 @@
+
+## Prerequisite: Already set up Mysql database called blog,   .env.local will look like:
+```db name : blog
+host:localhost
+user name:testuser
+user passwors:test
+```
+
+
+## Import  my posts into mysql database by using following block of code
+```
+DROP TABLE IF EXISTS `posts`;
+CREATE TABLE posts(
+   title   VARCHAR(44) NOT NULL PRIMARY KEY
+  ,content VARCHAR(49) NOT NULL
+);
+INSERT INTO posts(title,content) VALUES ('This is all about end points','This is all about api end points111');
+INSERT INTO posts(title,content) VALUES ('How to guide on SSR','This is all about server side rendering');
+INSERT INTO posts(title,content) VALUES ('My first post','This is my first post..I have nothing much to say');
+INSERT INTO posts(title,content) VALUES ('A post','Yet another post');
+INSERT INTO posts(title,content) VALUES ('Last years post','This post is from last year');
+```
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+
 
 ## Getting Started
 
@@ -36,35 +62,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 
 
-// 1] Create an End point called posts hard code with following data :
-        { posts:[
-            {title:"This is all about end points",content:"This is all about api end points111"},
-            {title:"How to guide on SSR",content:"This is all about server side rendering" },
-            {title:"My first post",content:"This is my first post..I have nothing much to say" },
-            {title:"A post",content:"Yet another post" },
-            {title:"Last years post",content:"This post is from last year" }
-            ]
-        }
-// 2] Add SWR data fetch hook to get data on the client side
-
-// 3] Create a statically generated page using getStaticProps (Static Generation)
-
-// 4] Use SWR with getStaticProps
 
 
-// 1] Create an End point called posts hard code with following data :
-        { posts:[
-            {title:"This is all about end points",content:"This is all about api end points111"},
-            {title:"How to guide on SSR",content:"This is all about server side rendering" },
-            {title:"My first post",content:"This is my first post..I have nothing much to say" },
-            {title:"A post",content:"Yet another post" },
-            {title:"Last years post",content:"This post is from last year" }
-            ]
-        }
-// 2] Add SWR data fetch hook to get data on the client side
 
-// 3] Create a statically generated page using getStaticProps (Static Generation)
-
-// 4] Use SWR with getStaticProps
-
-// Add data base stuff
